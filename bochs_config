@@ -1,0 +1,8 @@
+# Configuration file for Bochs
+megs: 128
+romimage: file=/usr/share/bochs/BIOS-bochs-latest, address=0xfffe0000
+vgaromimage: file=/usr/share/bochs/VGABIOS-1gpl-latest
+floppya: 1_44=build/main_floppy.img, status=inserted
+boot: floppy
+mouse: enabled=1
+display_library: sd112, options="gui_debug"
